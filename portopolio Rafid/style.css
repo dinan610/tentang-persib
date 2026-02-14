@@ -1,0 +1,54 @@
+/* Custom Animations & Styles */
+:root {
+    --persib-blue: #0047AB;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-glass {
+    background: rgba(10, 15, 30, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+.bento-box {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bento-box:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(59, 130, 246, 0.5);
+    transform: scale(1.02);
+}
+
+/* Tipografi Kustom */
+h1 {
+    line-height: 0.9;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+/* Efek Glow */
+.text-blue-500 {
+    text-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050a14;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e3a8a;
+    border-radius: 10px;
+}

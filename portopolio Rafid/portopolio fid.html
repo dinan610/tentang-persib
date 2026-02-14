@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSIB - Pangeran Biru Kebanggaan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-white font-sans">
+
+    <nav class="nav-glass fixed w-full z-50 px-6 py-4 flex justify-between items-center border-b border-white/10">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center font-bold italic">P</div>
+            <span class="text-xl font-black tracking-tighter">PERSIB<span class="text-blue-500">.</span></span>
+        </div>
+        <ul class="hidden md:flex gap-8 text-sm font-medium uppercase tracking-widest text-gray-400">
+            <li><a href="#home" class="hover:text-blue-500 transition">Beranda</a></li>
+            <li><a href="#sejarah" class="hover:text-blue-500 transition">Sejarah</a></li>
+            <li><a href="#galeri" class="hover:text-blue-500 transition">Galeri</a></li>
+            <li><a href="#skuad" class="hover:text-blue-500 transition">Skuad</a></li>
+        </ul>
+        <button class="bg-blue-600 px-5 py-2 rounded-full text-xs font-bold uppercase hover:bg-blue-700 transition">Beli Tiket</button>
+    </nav>
+
+    <section id="home" class="relative h-screen flex items-center justify-center px-6 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=1920" class="w-full h-full object-cover opacity-30 shadow-inner" alt="Stadium">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+        </div>
+        
+        <div class="relative z-10 text-center max-w-4xl">
+            <h1 class="text-7xl md:text-9xl font-black italic tracking-tighter mb-6">MAUNG <span class="text-blue-600">BANDUNG.</span></h1>
+            <p class="text-gray-400 text-lg md:text-xl leading-relaxed mb-8">
+                Lebih dari sekadar klub, Persib adalah identitas, kehormatan, dan jantung dari Jawa Barat. Berdiri sejak 1933 untuk kejayaan selamanya.
+            </p>
+        </div>
+    </section>
+
+    <section id="sejarah" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div class="md:col-span-2 bento-box p-10 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold mb-4 text-blue-500 italic uppercase">Sejarah & Filosofi</h2>
+                <p class="text-gray-400 leading-relaxed mb-4">
+                    Persib Bandung resmi berdiri pada 14 Maret 1933. Dikenal dengan julukan <strong>Maung Bandung</strong> dan <strong>Pangeran Biru</strong>, klub ini memiliki basis suporter terbesar di Indonesia yang dikenal sebagai Bobotoh.
+                </p>
+                <p class="text-gray-400 leading-relaxed">
+                    Filosofi kami adalah "Menang dengan Kehormatan". Warna biru melambangkan ketenangan, kesetiaan, dan semangat tanpa batas yang mengalir di urat nadi setiap pemain dan pendukung.
+                </p>
+            </div>
+
+            <div class="bento-box p-10 flex flex-col justify-center text-center border-blue-500/50">
+                <div class="text-6xl font-black text-white mb-2">1933</div>
+                <div class="text-blue-500 font-bold uppercase tracking-widest">Tahun Berdiri</div>
+                <hr class="my-6 border-white/10">
+                <div class="flex justify-around">
+                    <div>
+                        <div class="text-3xl font-bold text-white">8+</div>
+                        <div class="text-xs text-gray-500 uppercase">Gelar Liga</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-white">Milyar</div>
+                        <div class="text-xs text-gray-500 uppercase">Bobotoh</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="galeri" class="md:col-span-3 grid grid-cols-2 md:grid-cols-4 gap-4 py-6">
+                <div class="h-64 rounded-3xl overflow-hidden bento-box group">
+                    <img src= gambar1.jpg class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Action 1">
+                </div>
+                <div class="h-64 rounded-3xl overflow-hidden bento-box group">
+                    <img src= gambar_2.jpg class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Action 2">
+                </div>
+                <div class="h-64 rounded-3xl overflow-hidden bento-box group">
+                    <img src= gamabr_3.jpg class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Action 3">
+                </div>
+                <div class="h-64 rounded-3xl overflow-hidden bento-box group">
+                    <img src= gamabr_4.jpg class="w-full h-full object-cover group-hover:scale-110 transition duration-500" alt="Action 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/10 text-center">
+        <div class="flex justify-center gap-6 mb-6 text-xl text-blue-500">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p class="text-gray-500 text-sm tracking-widest uppercase">
+            Website modern oleh <span class="text-white font-bold">Rafid</span> | © 2026 PERSIB Fans
+        </p>
+    </footer>
+
+</body>
+</html>
